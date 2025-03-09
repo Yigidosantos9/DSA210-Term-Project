@@ -4,7 +4,7 @@
 
 I am a student from Sabancı University, Furkan Yiğit Bakım, and this is my DSA210 term project. Over the next three months, I'm going to track how my daily **screen time** indirectly affects my **sleep duration**, **sleep quality**, **daily energy levels**, and **caffeine intake**. 
 
-I'm curious to see if spending more time on screens (including phone, laptop, tablet, and TV) negatively impacts my sleep, reduces my energy, and leads me to consume more caffeine to stay alert. Additionally, I will take **daily weather conditions** into account as a **contextual factor** to explain any unexpected patterns in my energy levels and screen time habits.
+I'm curious to see if spending more time on screens (including phone, laptop, tablet, and TV) negatively impacts my sleep, reduces my energy, and leads me to consume more caffeine to stay alert. Additionally, I will take **daily weather conditions** and **whether I go to the gym or not** into account as a **contextual factor** to explain any unexpected patterns in my energy levels and screen time habits (e.g., high energy despite long screen time).
 
 My plan is simple: **collect daily data** on screen time, sleep, energy, caffeine, and weather. Using **data visualization** and **statistical analysis** techniques, I’ll explore patterns, test hypotheses, and seek actionable insights to improve my daily routine.
 
@@ -16,7 +16,7 @@ My plan is simple: **collect daily data** on screen time, sleep, energy, caffein
 - There is **no significant relationship** between screen time and sleep parameters (duration and quality), energy levels, and caffeine consumption. Increased screen time does not significantly impact sleep, energy, or caffeine intake.
 
 ### Alternative Hypothesis (H₁):
-- There **is a significant relationship** between screen time and sleep parameters (duration and quality), energy levels, and caffeine consumption. As screen time increases, **sleep duration decreases, sleep quality worsens, energy levels drop**, and **caffeine consumption increases** as a compensatory response.
+- There **is a significant relationship** between screen time and sleep parameters (duration and quality), energy levels, and caffeine consumption. As screen time increases, **sleep duration decreases, sleep quality worsens, energy levels drop**, and **caffeine consumption increases** as a compensatory response. Gym attendance and weather may help explain unexpected patterns in energy or sleep (e.g., feeling energetic despite long screen time).
 
 ---
 
@@ -58,7 +58,8 @@ I’ll be tracking my daily habits for three months and recording them in an Exc
 - **Energy Level (1-5)** – Self-rated energy level, averaged from morning, afternoon, and evening assessments.  
 - **Caffeine Intake (mg)** – Total daily caffeine consumption, manually recorded based on beverage type.  
 - **Drinks Consumed** – Specific beverages (coffee, tea, energy drinks, etc.).  
-- **Weather Condition** – General daily weather (Sunny, Cloudy, Rainy, etc.) for contextual understanding.  
+- **Weather Condition** – General daily weather (Sunny, Cloudy, Rainy, etc.) for contextual understanding.
+- **Gym Attendence** - Went to gym? (Yes-No) for contextual understanding.
 
 I’ll ensure consistency in data logging and flag outliers (e.g., days when I’m sick or traveling).
 
@@ -97,6 +98,7 @@ I’ll ensure consistency in data logging and flag outliers (e.g., days when I�
   - How screen time and sleep patterns change during **exam periods**.
   - Whether **cumulative effects** (e.g., consecutive poor sleep days) increase caffeine intake.
   - Compare behaviors during **stressful periods (exams)** vs regular days to see how routines shift.
+  - Analyze how weather and gym activity together might explain deviations from expected trends (e.g., high energy despite long screen time).
 
 ### Consideration of Contextual Factors (Weather)
 - Use **daily weather data** to **interpret unexpected patterns** (e.g., high screen time but high energy on a sunny day).
@@ -121,7 +123,7 @@ Although I haven't completed data collection yet, I expect to find that:
 - Poor sleep will result in **lower energy levels** the next day.
 - **Low energy days** will be associated with **higher caffeine consumption**.
 - **Reducing evening screen time** may improve both sleep and energy levels.
-- **Weather** may help explain days that do not follow the general trend (e.g., feeling energetic despite high screen time).
+- **Weather and gym attendence** may help explain days that do not follow the general trend (e.g., feeling energetic despite high screen time).
 
 ---
 
