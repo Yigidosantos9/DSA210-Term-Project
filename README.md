@@ -6,7 +6,9 @@ I am a student from Sabancı University, Furkan Yiğit Bakım, and this is my DS
 
 My plan is simple: collect daily data on phone usage, sleep duration, energy levels, and caffeine intake. Using data visualization and statistical analysis techniques, I’ll explore patterns, test hypotheses, and see if I can make meaningful improvements in my daily routine.
 
+
 ---
+
 
 ## Hypothesis
 ### Null Hypothesis (H₀):
@@ -14,6 +16,8 @@ My plan is simple: collect daily data on phone usage, sleep duration, energy lev
 
 ### Alternative Hypothesis (H₁):
 - There is a significant relationship between phone usage and sleep parameters (duration and quality), energy levels, and caffeine consumption. As phone usage increases, sleep duration decreases, sleep quality worsens, energy levels drop, and caffeine consumption increases as a compensatory response.
+
+---
 
 ## Objectives
 
@@ -74,31 +78,55 @@ I’ll use the following tools to collect, analyze, and visualize my data:
 
 ### Data Collection
 - Regularly log data in Excel and import it into Python using Pandas.
-- Clean the data, handle missing values, and standardize formats.
+- Clean the data, handle missing values, and standardize formats (e.g., converting hours to minutes).
 
 ### Data Visualization
-- Use scatter plots and heatmaps to explore relationships between phone usage, sleep, energy, and caffeine intake.
-- Identify patterns and trends in time series data.
+- Use scatter plots to explore pairwise relationships (e.g., phone usage vs sleep quality, caffeine intake vs energy levels).
+- Use heatmaps to visualize overall correlations between all tracked variables.
+- Create time series plots to observe how variables like phone usage and sleep evolve over time.
 
-### Statistical Analysis
-- Perform **correlation analysis** to quantify relationships between variables.
-- Use **regression analysis** to evaluate the strength of indirect effects.
-- Conduct **time-series analysis** to observe behavioral changes over time.
+### Hypothesis Testing
+- Test hypotheses such as:
+  - **H₀**: Phone usage has no significant effect on sleep, energy, or caffeine consumption.
+  - **H₁**: Phone usage significantly impacts sleep (duration and quality), energy levels, and caffeine consumption.
+- Conduct **correlation significance tests** and **regression analysis** to determine if observed relationships are statistically significant.
+- Example: Perform a regression analysis to see if higher phone usage predicts shorter sleep duration or poorer sleep quality.
+
+### Trend Analysis
+- Investigate patterns over time, such as:
+  - How phone usage and sleep patterns change during exam periods.
+  - Whether there are cumulative effects (e.g., multiple nights of poor sleep increasing caffeine intake).
+- Compare data from stressful periods (like exams) vs normal days to see how behaviors change under pressure.
+
+### Example Analysis
+- **Phone usage vs sleep quality**: Create a scatter plot and calculate correlation coefficient.
+- **Caffeine intake on low-energy days**: Analyze whether caffeine consumption increases when energy level is below 3.
+- **Time-series visualization**: Plot phone usage and sleep quality over time to see if reducing phone usage improves sleep.
 
 ---
 
-## Example Analysis
+## Findings (Expected Outcomes)
 
-Some of the key analyses I plan to run:
+While I haven't collected enough data yet to analyze, I expect to find that:
 
-1. **Does high phone usage affect my sleep duration?**  
-   - Plot phone usage vs. sleep duration over time to check for trends.
-2. **Does sleep duration impact my energy levels the next day?**  
-   - Compare daily energy scores to the previous night's sleep duration.
-3. **Do I drink more caffeine on low-energy days?**  
-   - Track caffeine intake on days where energy levels are below 3.
-4. **Can reducing screen time before bed improve sleep?**  
-   - Identify days where screen time was low before bed and compare sleep duration.
+- **Higher phone usage** will correlate with **shorter and lower-quality sleep**.
+- **Poor sleep quality and duration** will lead to **lower energy levels** the next day.
+- **Low energy days** will be associated with **higher caffeine intake**.
+- Reducing evening phone usage may improve both sleep and energy levels.
+
+---
+
+## Limitations and Future Work
+
+### Limitations:
+- **External factors**, such as exam periods or unexpected life events, may influence sleep, energy, and caffeine consumption patterns, making it harder to isolate the effect of phone usage.
+- Exam stress might independently affect sleep and caffeine habits, creating confounding variables that can interfere with identifying clear relationships between phone usage and other factors.
+- Data is limited to **one individual**, so results may not be generalizable to others.
+
+### Future Work:
+- **Expanding dataset** by including more participants with diverse routines to enhance the generalizability of the findings.
+- Longer observation period to analyze **seasonal patterns or long-term effects** to capture more variability, including holidays and non-stress periods.
+- Exploring **other variables**, such as exercise, diet quality, and mental well-being, to understand more complex interactions.
 
 ---
 
