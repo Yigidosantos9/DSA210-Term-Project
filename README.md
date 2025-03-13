@@ -1,77 +1,77 @@
-# ScreenTime-Caffeine-Sleep-Energy Project
+# LectureHours-PhonePickUp Project
 
 ## DSA210 - Data Science Term Project Overview
 
-I am a student from Sabancı University, Furkan Yiğit Bakım, and this is my DSA210 term project. Over the next three months, I'm going to track how my daily **screen time** indirectly affects my **sleep duration**, **sleep quality**, **daily energy levels**, and **caffeine intake**. 
+**I am a student from Sabancı University, Furkan Yiğit Bakım, and this is my DSA210 term project.**
 
-I'm curious to see if spending more time on screens (including phone, laptop, tablet, and TV) negatively impacts my sleep, reduces my energy, and leads me to consume more caffeine to stay alert. Additionally, I will take **daily weather conditions** and **whether I go to the gym or not** into account as a **contextual factor** to explain any unexpected patterns in my energy levels and screen time habits (e.g., high energy despite long screen time).
-
-My plan is simple: **collect daily data** on screen time, sleep, energy, caffeine, and weather. Using **data visualization** and **statistical analysis** techniques, I’ll explore patterns, test hypotheses, and seek actionable insights to improve my daily routine.
+Over the next three months, I am going to track how my daily lecture hours impact my phone pick-up behavior, focusing on how often I check or unlock my phone. I’m curious to see if on days with more lectures, I tend to pick up my phone more frequently, and whether this increase is related to social media or communication apps. In addition, I will track contextual daily factors such as caffeine intake, sleep duration, gym attendance, and weather conditions to better understand variations in phone usage. To broaden the analysis and test if these patterns are common, I will also collect data from a few other students with different schedules and academic backgrounds.
 
 ---
 
 ## Hypothesis
 
 ### Null Hypothesis (H₀):
-- There is **no significant relationship** between screen time and sleep parameters (duration and quality), energy levels, and caffeine consumption. Increased screen time does not significantly impact sleep, energy, or caffeine intake.
+- **There is no significant relationship between daily lecture and recitation hours and phone pick-up behavior. The total number of pick-ups, as well as pick-ups for social media and communication apps, do not significantly change depending on the number of lecture hours.**
 
 ### Alternative Hypothesis (H₁):
-- There **is a significant relationship** between screen time and sleep parameters (duration and quality), energy levels, and caffeine consumption. As screen time increases, **sleep duration decreases, sleep quality worsens, energy levels drop**, and **caffeine consumption increases** as a compensatory response. Gym attendance and weather may help explain unexpected patterns in energy or sleep (e.g., feeling energetic despite long screen time).
+- **There is a significant relationship between daily lecture and recitation hours and phone pick-up behavior. As lecture hours increase, the total number of pick-ups, social media pick-ups, and communication pick-ups also increase.**
 
 ---
 
 ## Objectives
 
-### Understand Indirect Effects  
-- Investigate how **screen time** influences **sleep duration, sleep quality, energy levels,** and **caffeine intake** over time.
+- **Understand Pick-up Behavior:**  
+  Explore how academic workload (lecture hours) affects phone pick-up frequency.
 
-### Identify Key Patterns  
-- Determine if **increased screen time leads to shorter or lower-quality sleep**, lower energy, and **increased caffeine consumption**.
+- **Identify App-Specific Trends:**  
+  Analyze whether both social media and communication app pick-ups increase on days with more lectures.
 
-### Optimize Daily Habits  
-- Use **data-driven insights** to adjust my habits, aiming for **better sleep, improved energy**, and **reduced dependence on caffeine**.
+- **Consider Contextual Factors:**  
+  Examine how caffeine intake, sleep duration, gym attendance, and weather influence phone pick-up behavior on heavy and light lecture days.
 
-### Apply Data Science Skills  
-- Apply **real-world data science techniques** learned in DSA210, including **data collection, analysis, and visualization**.
+- **Apply Data Science Skills:**  
+  Use real-world data science techniques learned in DSA210, including data collection, analysis, and visualization.
 
 ---
 
 ## Motivation
 
-This project is important to me because it directly connects to my daily life and well-being. Here’s why I’m excited:
+This project is important to me because phone pick-ups are often unconscious, and I want to understand how my academic workload affects these behaviors. Here’s why I’m excited:
 
-- **Personal Growth** – Understanding my habits to improve productivity, sleep, and energy.
-- **Data-Driven Insights** – Making smarter decisions based on real data, not assumptions.
-- **Practical Application** – Applying data science to something meaningful in my life.
-- **Long-Term Impact** – Learning how to manage screen time for better overall health.
+- **Personal Growth:** Understanding my own habits to improve focus and reduce unnecessary distractions.
+- **Data-Driven Insights:** Making better decisions based on real data, not assumptions.
+- **Practical Application:** Applying data science to something meaningful in my life.
+- **Long-Term Impact:** Developing healthier phone habits and better focus management.
+- **Broader Relevance:** By including data from other students, this project aims to explore common patterns among university students and understand how academic workload impacts digital behavior. With increasing concerns about digital well-being and productivity, these insights could help students, educators, and mental health professionals to design better strategies for managing phone usage during high-stress periods such as exam seasons. The project also aims to contribute to the broader conversation on how modern academic life and technology use intersect, offering actionable suggestions for healthier digital habits in academic settings.
 
 ---
 
 ## Dataset
 
-I’ll be tracking my daily habits for three months and recording them in an Excel spreadsheet:
+I will be tracking daily habits for three months and recording them in an Excel spreadsheet. Additionally, a small group of students from different academic backgrounds will contribute data to broaden the dataset and provide richer analysis.
 
-- **Date** – The specific day of the record.  
-- **Screen Time (min)** – Total daily screen time, collected from iPhone’s Screen Time feature.  
-- **Sleep Duration (min)** – Total sleep duration per night, recorded using the iPhone Health app.  
-- **Sleep Quality (1-5)** – Self-rated sleep quality, based on a scale of 1-5.  
-- **Energy Level (1-5)** – Self-rated energy level, averaged from morning, afternoon, and evening assessments.  
-- **Caffeine Intake (mg)** – Total daily caffeine consumption, manually recorded based on beverage type.  
-- **Drinks Consumed** – Specific beverages (coffee, tea, energy drinks, etc.).  
-- **Weather Condition** – General daily weather (Sunny, Cloudy, Rainy, etc.) for contextual understanding.
-- **Gym Attendence** - Went to gym? (Yes-No) for contextual understanding.
-
-I’ll ensure consistency in data logging and flag outliers (e.g., days when I’m sick or traveling).
+- **Date:** The specific day of the record.
+- **Day:** Day of the week (e.g., Monday, Tuesday).
+- **Lecture Hours (h):** Total lecture hours that day.
+- **Total Pick-ups:** Total number of phone pick-ups (from iPhone Screen Time).
+- **Social Media Pick-ups:** Number of phone pick-ups for social media apps (e.g., Instagram).
+- **Communication Pick-ups:** Number of pick-ups for communication apps (e.g., WhatsApp).
+- **Total Screen Time (min):** Total daily screen time (supportive but secondary).
+- **Sleep Duration (min):** Total sleep duration per night (from iPhone Health app).
+- **Caffeine Intake (mg):** Daily caffeine consumption, manually recorded.
+- **Gym Attendance (1=Yes, 0=No):** Whether I went to the gym that day.
+- **Temperature (°C):** Daily average temperature.
+- **Condition:** General daily weather (e.g., Sunny, Rainy).
 
 ---
 
 ## Tools & Technologies
 
-- **Python** – Data analysis and visualization.  
-- **Pandas** – Data organization and preprocessing.  
-- **Matplotlib & Seaborn** – Visualization (scatter plots, heatmaps, time series).  
-- **Excel** – Manual data logging.  
-- **GitHub** – Project documentation and version control.
+- **Python:** Data analysis and visualization.
+- **Pandas:** Data organization and preprocessing.
+- **Matplotlib & Seaborn:** Visualization (scatter plots, bar charts, time series).
+- **Excel:** Manual data logging.
+- **GitHub:** Project documentation and version control.
 
 ---
 
@@ -79,65 +79,67 @@ I’ll ensure consistency in data logging and flag outliers (e.g., days when I�
 
 ### Data Collection
 - Regularly log data in Excel and import it into Python using Pandas.
-- Clean and standardize data (e.g., convert hours to minutes).
+- Clean and standardize data for consistency and accuracy.
 
 ### Data Visualization
-- **Scatter plots** to explore relationships (e.g., screen time vs sleep quality, caffeine intake vs energy levels).
-- **Heatmaps** to visualize overall correlations between all tracked variables.
-- **Time series plots** to observe changes over time (e.g., screen time and sleep trends).
+- **Scatter Plots:** Explore relationships (e.g., lecture hours vs. total pick-ups).
+- **Bar Charts:** Compare social media vs. communication app pick-ups on busy vs. light days.
+- **Heatmaps:** Visualize overall correlations between tracked variables.
+- **Time Series Plots:** Observe changes over time (e.g., how pick-up patterns evolve).
 
 ### Hypothesis Testing
-- Test hypotheses such as:  
-  - **H₀**: Screen time has no significant effect on sleep, energy, or caffeine consumption.  
-  - **H₁**: Screen time significantly impacts sleep (duration and quality), energy, and caffeine intake.  
-- Conduct **correlation significance tests** and **regression analysis** to determine if observed relationships are statistically meaningful.
-- Example: Regression analysis to assess if higher screen time predicts shorter sleep duration or lower sleep quality.
+- **H₀:** Lecture hours have no significant effect on pick-up frequency or type.
+- **H₁:** Lecture hours significantly influence total pick-ups, social media pick-ups, and communication pick-ups.
+- Conduct correlation analysis and regression analysis to determine if observed relationships are statistically meaningful.
 
 ### Trend Analysis
-- Analyze patterns over time, including:  
-  - How screen time and sleep patterns change during **exam periods**.
-  - Whether **cumulative effects** (e.g., consecutive poor sleep days) increase caffeine intake.
-  - Compare behaviors during **stressful periods (exams)** vs regular days to see how routines shift.
-  - Analyze how weather and gym activity together might explain deviations from expected trends (e.g., high energy despite long screen time).
-
-### Consideration of Contextual Factors (Weather)
-- Use **daily weather data** to **interpret unexpected patterns** (e.g., high screen time but high energy on a sunny day).
-- Weather will **not be a primary variable** but will be used to **explain anomalies** in energy or caffeine intake.
+- Analyze patterns over time, including:
+  - How pick-up behavior changes during exam periods.
+  - Whether cumulative stress (e.g., multiple busy days in a row) leads to more frequent pick-ups.
+  - How contextual factors like caffeine intake, gym, and sleep modulate pick-up frequency.
+  - The role of weather in influencing mood and phone usage.
 
 ---
 
 ## Example Analysis
 
-- **Screen time vs sleep quality**: Scatter plot and correlation coefficient.
-- **Caffeine intake on low-energy days**: Analyze if caffeine consumption increases when energy level is below 3.
-- **Time-series visualization**: Plot screen time and sleep quality to examine long-term trends and effects of reduced screen time.
-- **Exam periods vs normal days**: Compare averages to see how exams influence sleep, screen time, and caffeine intake.
+- **Lecture Hours vs. Total Pick-ups:**  
+  Scatter plot with correlation coefficient.
+
+- **Social Media vs. Communication Pick-ups:**  
+  Bar chart comparing app usage on heavy vs. light days.
+
+- **Time-Series Visualization:**  
+  Tracking phone pick-up frequency over time, aligned with academic schedule.
+
+- **Regression Analysis:**  
+  Predicting pick-up counts from lecture hours, adjusting for sleep, caffeine, gym, and weather.
 
 ---
 
 ## Findings (Expected Outcomes)
 
-Although I haven't completed data collection yet, I expect to find that:
+Although I haven’t completed data collection yet, I expect to find that:
 
-- **Higher screen time** will correlate with **shorter and lower-quality sleep**.
-- Poor sleep will result in **lower energy levels** the next day.
-- **Low energy days** will be associated with **higher caffeine consumption**.
-- **Reducing evening screen time** may improve both sleep and energy levels.
-- **Weather and gym attendence** may help explain days that do not follow the general trend (e.g., feeling energetic despite high screen time).
+- **More lecture hours will be associated with higher total pick-ups.**
+- **Both social media and communication pick-ups will increase on busy academic days.**
+- **Caffeine intake and lower sleep may amplify phone pick-up frequency.**
+- **Gym attendance may help reduce unnecessary pick-ups.**
+- **Weather conditions may influence phone usage patterns (e.g., more pick-ups on rainy days).**
 
 ---
 
 ## Limitations and Future Work
 
 ### Limitations:
-- **External factors** like exam periods or personal life events may influence sleep, energy, and caffeine intake.
-- **Exam stress** might independently affect sleep and caffeine habits, potentially confounding results.
-- Data is based on **one individual**, limiting generalizability.
+- External factors like exams or personal life events may influence phone behavior independently.
+- Initially limited to a small group of participants, although not restricted to only one person.
+- Other app categories (e.g., entertainment, news) are not explicitly tracked.
 
 ### Future Work:
-- **Expand the dataset** with more participants for broader analysis.
-- **Longer observation periods** to capture more variability (e.g., holidays, non-stress periods).
-- Add other factors like **exercise, diet quality, or mental health indicators** for deeper understanding of daily well-being.
+- Expand dataset to include more participants from diverse backgrounds and departments.
+- Extend observation period to capture more variability and seasonal effects.
+- Add other indicators like stress levels, academic performance, and mental health for deeper insights.
 
 ---
 
@@ -145,9 +147,9 @@ Although I haven't completed data collection yet, I expect to find that:
 
 By the end of this project, I aim to answer:
 
-- Does excessive screen time negatively affect my sleep?  
-- Can reducing screen time improve sleep and energy levels?  
-- Is caffeine intake linked to fluctuations in sleep and energy?  
-- What small, data-driven changes can I make to improve my daily habits?  
+- **Does an increase in lecture hours lead to more frequent phone pick-ups?**
+- **Do both social media and communication app pick-ups increase on days with more lectures?**
+- **How do caffeine intake, sleep, gym, and weather influence these patterns?**
+- **What data-driven strategies can help manage phone usage on busy academic days?**
 
 This project isn’t just about tracking numbers—it’s about using data science to improve my life in meaningful ways. I’m excited to see what the data reveals and how I can apply these insights to build healthier routines.
