@@ -4,7 +4,7 @@
 
 **I am a student from Sabancı University, Furkan Yiğit Bakım, and this is my DSA210 term project.**
 
-Over the next three months, I am going to track how my daily lecture hours impact my phone pick-up behavior, focusing on how often I check or unlock my phone. I’m curious to see if on days with more lectures, I tend to pick up my phone more frequently, and whether this increase is related to social media or communication apps. In addition, I will track contextual daily factors such as caffeine intake, sleep duration, gym attendance, and weather conditions to better understand variations in phone usage. To broaden the analysis and test if these patterns are common, I will also collect data from a few other students with different schedules and academic backgrounds.
+Over the next three months, I am going to track how my daily lecture hours impact my phone pick-up behavior, focusing on how often I check or unlock my phone. I’m curious to see if on days with more lectures, I tend to pick up my phone more frequently, and whether this increase is related to social media or communication apps. In addition, I will track contextual daily factors such as caffeine intake, sleep duration, gym attendance, and weather conditions to better understand variations in phone usage. 
 
 ---
 
@@ -142,6 +142,24 @@ Although I haven’t completed data collection yet, I expect to find that:
 - Add other indicators like stress levels, academic performance, and mental health for deeper insights.
 
 ---
+
+## Hypothesis Testing Summary
+
+To understand how different factors impact phone pick-up behavior, several statistical tests were conducted.
+
+- **Lecture Hours:**  
+  Pick-up activity (especially social media and communication apps) significantly increased on days with more than 2 hours of lectures.
+
+- **Exam Days:**  
+  Total pick-ups dropped significantly on exam days, likely due to reduced distractions.
+
+- **Gym Attendance & High Caffeine Days:**  
+  These showed slight visual differences but were not statistically significant based on t-test results.
+
+- **Weather Conditions:**  
+  ANOVA results indicated no significant effect of weather on phone usage.
+
+Overall, academic intensity (e.g., lecture hours and exams) had the most noticeable impact, while lifestyle and environmental factors had a more limited effect.
 
 ## Conclusion & Goals
 
