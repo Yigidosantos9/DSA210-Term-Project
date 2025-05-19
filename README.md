@@ -161,13 +161,26 @@ To understand how different factors impact phone pick-up behavior, several stati
 
 Overall, academic intensity (e.g., lecture hours and exams) had the most noticeable impact, while lifestyle and environmental factors had a more limited effect.
 
+## Machine Learning Component
+A Linear Regression model was built to predict daily phone pick-up counts using academic and lifestyle factors.
+
+**Features:**
+  - LectureHours, SleepDuration, CaffeineIntake, IsHighCaffeineDay (engineered), Gym, Temperature, IsExamDay, IsWeekend
+
+**Results:**
+  - MAE: 24.58
+  - RMSE: 41.70
+  - R²: 0.307
+
+To enrich the dataset, IsHighCaffeineDay was created as a binary feature based on caffeine intake > 300mg. The model captured some of the variance in phone usage, but individual behavior and context still play a big role.
+
 ## Conclusion & Goals
 
-By the end of this project, I aim to answer:
+This project helped me understand how my daily habits—especially lecture hours—relate to how often I pick up my phone. Here’s what I found:
+  - I tend to use my phone more on days with more lectures, especially for social media and communication apps.
+  - On exam days, phone usage clearly drops—probably because I’m more focused (or stressed).
+  - Sleep and caffeine seem to have a small effect, but nothing too strong.
 
-- **Does an increase in lecture hours lead to more frequent phone pick-ups?**
-- **Do both social media and communication app pick-ups increase on days with more lectures?**
-- **How do caffeine intake, sleep, gym, and weather influence these patterns?**
-- **What data-driven strategies can help manage phone usage on busy academic days?**
+To take it a step further, I built a simple machine learning model to predict my daily pick-up count based on things like lecture hours, sleep, and caffeine. I also created a new feature called IsHighCaffeineDay to capture unusually high caffeine days. The model wasn’t perfect, but it explained about 31% of the variation—which is a solid start.
 
-This project isn’t just about tracking numbers—it’s about using data science to improve my life in meaningful ways. I’m excited to see what the data reveals and how I can apply these insights to build healthier routines.
+In the end, this project wasn’t just about numbers. It made me more aware of my habits, and showed me how I can use data to make small but meaningful improvements in daily life.
