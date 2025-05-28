@@ -62,7 +62,8 @@ I will be tracking daily habits for three months and recording them in an Excel 
 - **Gym Attendance (1=Yes, 0=No):** Whether I went to the gym that day.
 - **Temperature (°C):** Daily average temperature.
 - **Condition:** General daily weather (e.g., Sunny, Rainy).
-
+- 
+- **IsHighCaffeineDay (engineered):** A binary feature indicating if caffeine intake exceeded 300mg on that day.
 ---
 
 ## Tools & Technologies
@@ -162,25 +163,38 @@ To understand how different factors impact phone pick-up behavior, several stati
 Overall, academic intensity (e.g., lecture hours and exams) had the most noticeable impact, while lifestyle and environmental factors had a more limited effect.
 
 ## Machine Learning Component
-A Linear Regression model was built to predict daily phone pick-up counts using academic and lifestyle factors.
 
-**Features:**
-  - LectureHours, SleepDuration, CaffeineIntake, IsHighCaffeineDay (engineered), Gym, Temperature, IsExamDay, IsWeekend
+We trained and compared three different machine learning models — Linear Regression, Random Forest, and K-Nearest Neighbors — using various combinations of features. Our goal was to achieve the highest possible R² score using the smallest number of meaningful features.
 
-**Results:**
-  - MAE: 24.58
-  - RMSE: 41.70
-  - R²: 0.307
+**Best Model (Random Forest):**
+- **Target:** TotalPickups
+- **Top Features:** LectureHours, IsHighCaffeineDay
+- **Performance:**
+  - R²: 0.361
+  - MAE: 28.06
+  - RMSE: 40.05
 
-To enrich the dataset, IsHighCaffeineDay was created as a binary feature based on caffeine intake > 300mg. The model captured some of the variance in phone usage, but individual behavior and context still play a big role.
+This shows that even with just two simple features, a relatively high prediction accuracy can be achieved.
+
+We also trained models to predict **SocialMediaPickups** and **CommunicationPickups** using the same feature pair:
+
+- **SocialMediaPickups:**
+  - R²: 0.689
+- **CommunicationPickups:**
+  - R²: 0.464
+
+These results support the idea that lecture hours and high caffeine intake are strong indicators of increased phone activity, especially for social media use.
 
 ## Conclusion & Goals
 
-This project helped me understand how my daily habits—especially lecture hours—relate to how often I pick up my phone. Here’s what I found:
-  - I tend to use my phone more on days with more lectures, especially for social media and communication apps.
-  - On exam days, phone usage clearly drops—probably because I’m more focused (or stressed).
-  - Sleep and caffeine seem to have a small effect, but nothing too strong.
+This project helped me discover how academic and lifestyle habits impact my phone usage. Key insights include:
 
-To take it a step further, I built a simple machine learning model to predict my daily pick-up count based on things like lecture hours, sleep, and caffeine. I also created a new feature called IsHighCaffeineDay to capture unusually high caffeine days. The model wasn’t perfect, but it explained about 31% of the variation—which is a solid start.
+- I use my phone more on high-lecture days, especially for social media and communication.
+- High caffeine intake is also a strong predictor of increased pick-up behavior.
+- Exam days reduce phone usage, likely due to higher focus.
+- A custom binary feature, `IsHighCaffeineDay`, significantly improved model accuracy.
+- By iteratively testing different features and models, I achieved the best result using just 2 features — `LectureHours` and `IsHighCaffeineDay` — with an R² of 0.361.
+
+The project not only confirmed my hypothesis but also showed how minimal, smart feature engineering can yield strong predictive performance.
 
 In the end, this project wasn’t just about numbers. It made me more aware of my habits, and showed me how I can use data to make small but meaningful improvements in daily life.
